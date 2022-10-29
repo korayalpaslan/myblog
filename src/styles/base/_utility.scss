@@ -1,15 +1,15 @@
-.padding-side {
-    padding-left: 0rem;
-    padding-right: 0rem;
 
-    @include respond(tab-port) {
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
+.wrapper {
+   max-width: 1000px;
+   margin: auto;
+   padding: 0 2rem;
+}
 
-    @include respond(desktop) {
-        padding-left: 8rem;
-        padding-right: 8rem;
-    }
+.text-no-decoration {
+    text-decoration: none;
+    color: inherit;
+}
 
-  }
+.text-center{
+    text-align: center;
+}

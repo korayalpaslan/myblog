@@ -37,7 +37,9 @@ body {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto; }
+  text-decoration-skip-ink: auto;
+  text-decoration: none;
+  color: inherit; }
 
 /* Make images easier to work with */
 img,
@@ -64,14 +66,87 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important; } }
 
-.padding-side {
-  padding-left: 0rem;
-  padding-right: 0rem; }
-  @media (min-width: 37.5em) {
-    .padding-side {
-      padding-left: 4rem;
-      padding-right: 4rem; } }
-  @media (min-width: 75em) {
-    .padding-side {
-      padding-left: 8rem;
-      padding-right: 8rem; } }
+.wrapper {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 2rem; }
+
+.text-no-decoration {
+  text-decoration: none;
+  color: inherit; }
+
+.text-center {
+  text-align: center; }
+
+.header {
+  display: none; }
+  @media (min-width: 56.25em) {
+    .header {
+      display: block; } }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh; }
+  .nav ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0; }
+  .nav__pages > li {
+    margin-right: 1rem;
+    text-decoration: none; }
+  .nav__social > li {
+    margin-left: 1rem; }
+
+.headline {
+  font-family: 'Arial', sans-serif;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  border-bottom: 1px solid #ffb900; }
+  @media (min-width: 56.25em) {
+    .headline {
+      border-bottom: none; } }
+  .headline__title {
+    text-align: center;
+    margin-top: 0.25rem;
+    margin-left: auto;
+    font-size: 1rem; }
+    @media (min-width: 56.25em) {
+      .headline__title {
+        margin-right: auto;
+        font-size: 2.25rem; } }
+
+.hamburger {
+  display: block;
+  margin-left: auto; }
+  @media (min-width: 56.25em) {
+    .hamburger {
+      display: none; } }
+  .hamburger > span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-left: auto;
+    transition: all 300ms ease-in-out;
+    transform-origin: 4px 1px;
+    background-color: #777; }
+    .hamburger > span:not(:last-child) {
+      width: 30px;
+      margin-bottom: 6px; }
+
+.toggle > span:first-child {
+  transform: rotate(45deg); }
+
+.toggle > span:nth-child(2) {
+  opacity: 0; }
+
+.toggle > span:nth-child(3) {
+  transform: rotate(-45deg);
+  width: 30px; }
