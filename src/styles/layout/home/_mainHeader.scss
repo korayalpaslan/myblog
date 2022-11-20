@@ -1,7 +1,9 @@
 .header {
   display: none;
+
   @include respond(tab-land) {
     display: block;
+    height: 6vh;
   }
 }
 
@@ -9,11 +11,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10vh;
+  height: 6vh;
 
   ul {
     display: flex;
     justify-content: flex-start;
+    align-items:center;
     list-style: none;
     padding-inline-start: 0;
     margin-block-start: 0;

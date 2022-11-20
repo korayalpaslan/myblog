@@ -2,7 +2,15 @@
 @import './abstracts/variables';
 @import './abstracts/mixins';
 @import './base/base';
+@import './base/typo';
 @import './base/utility';
 
-@import './layout/mainHeader';
-@import './layout/headline';
+@import './components/buttons';
+@import './components/card';
+
+@import './layout/home/mainHeader';
+@import './layout/home/headline';
+@import './layout/home/hero';
+@import './layout/home/post';
+@import './layout/home/newsletter';
+@import './layout/news/news';

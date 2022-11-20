@@ -1,9 +1,19 @@
 
 .wrapper {
+    background-color: transparent;
+
+    @include respond(tab-land) {
+        background-color: $color-grey-light-2;
+      }
+}
+
+.container {
    max-width: 1000px;
    margin: auto;
-   padding: 0 2rem;
+   padding: 0 1rem;
 }
+
+
 
 .text-no-decoration {
     text-decoration: none;

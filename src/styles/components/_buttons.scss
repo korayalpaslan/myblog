@@ -1,0 +1,53 @@
+
+// BUTTONS 
+
+.btn{
+    border: none;
+    font-size: .75rem;
+    padding: .25rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include respond(tab-land) {
+        font-size: 1rem;
+        // padding: .5rem 2rem;
+      }
+}
+
+.btn-primary {
+    background-image: linear-gradient(to right, $color-primary, $color-primary-dark);
+    color: $color-grey-light;
+    box-shadow: 1px 2px $color-grey-dark-3;
+}
+
+.btn-secondary {
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary);
+    color: $color-black;
+    box-shadow: 1px 2px $color-grey-dark-3;
+}
+
+.btn-explore{
+    background-image: linear-gradient(to right, #000, #000);
+    color: $color-grey-light-2;
+    box-shadow: 1px 2px $color-grey-dark-3;
+}
+
+.btn-login{
+    background-image: linear-gradient(to right, #000, #000);
+    color: $color-grey-light-2;
+    
+}
+.btn-signup{
+    background-image: linear-gradient(to right, #000, #000);
+    color: $color-grey-light-2;
+    padding: .5rem 0;
+    
+}
+
+.btn-link{
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
